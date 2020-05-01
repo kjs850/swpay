@@ -146,10 +146,20 @@
             border-radius: 50%;
         }
         .add-button {
-            position: absolute;
-            top: 50px;
-            left: 100px;
+            bottom: 10px;
+            left: 10px;
+            display: block;
+            width: 30px;
+            text-align: center;
+            padding: 5px;
             z-index: 10;
+            position: fixed;
+            font-size: 12px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-clip: padding-box;
         }
 
         @keyframes rotate {
@@ -213,9 +223,12 @@
         </div>
 
         <!-- 홈 추가 버튼 -->
-        <button id="add-button" class="add-button">
-            add home
-        </button>
+        <div id="add-button" class="add-button">
+            <img src="./img/add_home.png" style="
+                        margin: 0 auto 2px;
+                        width: 27px;
+                        height: 27px;" />
+        </div>
 
 
         <div class="category">
