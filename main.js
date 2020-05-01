@@ -24,7 +24,7 @@ getCurrentLocation();
 var geocoder = new kakao.maps.services.Geocoder();
 
 var filename = "";
-var category = "total";
+var category = "";
 
 kakao.maps.event.addListener(map, "center_changed", function() {
     var level = map.getLevel();
