@@ -24,7 +24,7 @@ getCurrentLocation();
 var geocoder = new kakao.maps.services.Geocoder();
 
 var filename = "";
-var category = "";
+var category = "total";
 
 kakao.maps.event.addListener(map, "center_changed", function() {
     var level = map.getLevel();
@@ -167,7 +167,7 @@ function savePlaces(item) {
 }
 
 function displayPlaces(ypay_place) {
-    console.log(ypay_place);
+    //console.log(ypay_place);
 
     var markerImageSrc =
         "https://t1.daumcdn.net/localimg/localimages/07/2018/pc/img/marker_theme.png";
